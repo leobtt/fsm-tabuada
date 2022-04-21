@@ -1,0 +1,23 @@
+<%- include ('partials/header')%>
+
+
+      <div class="mt-8 w-full flex items-center flex-col">
+        <h1 class="text-5xl">Tabuada do número <%= num %></h1>
+        
+        <table class="table-auto mt-8 w-1/2 text-white bg-gray-800 mb-4">
+          <tbody>
+            <% multiplicationTable.map(item => {%>
+              <tr class="bg-blue text-center border-b-2 border-gray-500">
+                <td class="w-1/5 p-3 border-r-1 border-gray-100"><%= item.multiplied %></td>
+                <td>&nbsp; x &nbsp;</td>
+                <td><%= item.times %></td>
+                <td>&nbsp; = &nbsp;</td>
+                <td><%= item.result %></td>
+              </tr>
+            <% }) %>
+          </tbody>
+        </table>
+
+      </div>
+      
+  <%- include ('partials/footer')%>
