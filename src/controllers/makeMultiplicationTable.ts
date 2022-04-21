@@ -15,9 +15,9 @@ export const makeMultiplicationTable = (req: Request, res: Response) => {
     multiplicationTable.push({
       multiplied: Number(num),
       times: i,
-      result: parseFloat(num + i),
+      result: Number(num) * i,
     })
   }
 
-  return res.render('home', { multiplicationTable })
+  return res.render('table', { multiplicationTable, num })
 }
