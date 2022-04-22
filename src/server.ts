@@ -1,6 +1,6 @@
 import express, { application } from 'express'
 import path from 'path'
-import { router } from './routes'
+import { router } from './routes/index'
 const port = 3333
 
 const app = express()
