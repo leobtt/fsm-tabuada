@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { list, makeMultiplicationTable } from '../controllers'
+import { list, makeMultiplicationTable } from './../controllers/index'
 
 const router = Router()
 
